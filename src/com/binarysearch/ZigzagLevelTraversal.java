@@ -3,8 +3,12 @@ package com.binarysearch;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
+import java.util.Stack;
 
 // Write a function to print spiral(zig-zag) order traversal of a tree.
+
+// http://stackoverflow.com/questions/17485773/print-level-order-traversal-of-binary-tree-in-zigzag-manner
+
 
 public class ZigzagLevelTraversal {
 	//
@@ -14,24 +18,8 @@ public class ZigzagLevelTraversal {
 	//
 	void spiralTraverse(Node root) {
 		//
-		if (root == null) {
-			return;
-		}
-		//
-		queue.add(root);
-		//
-		while (!queue.isEmpty()) {
-			Node node = queue.remove();
-			System.out.println(node.data);
-			//
-			if (node.left != null) {
-				queue.add(node.left);
-			}
-			if (node.right != null) {
-				queue.add(node.right);
-			}
-
-		}
+		Stack<Integer> stack = new Stack<>();
+		
 	}
 
 	// Main

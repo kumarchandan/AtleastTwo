@@ -15,6 +15,7 @@ public class MirrorBinaryTree {
 		mirrorTree(node.right);
 		//
 		System.out.println(node.data);
+		
 		// mirror it
 		Node tempNode = node.left;
 		node.left = node.right;
